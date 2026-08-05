@@ -155,6 +155,8 @@ export const en = {
       noNotes: 'No notes yet. Create your first note!',
     },
     settings: {
+      model: 'Model',
+      modelHint: 'If you hit a quota error, switch to a Flash-Lite model — they have the largest free daily limits.',
       title: 'Settings',
       language: 'Language', darkMode: 'Dark Mode',
       aiProvider: 'AI Provider (API Key)',

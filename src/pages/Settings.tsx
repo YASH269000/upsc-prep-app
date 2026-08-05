@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { useRef, useState } from 'react'
 import Card from '../components/Card'
 import { useDarkMode, useLanguage } from '../hooks/useSettings'
-import { getGeminiApiKey, setGeminiApiKey } from '../lib/llm'
+import { GEMINI_MODELS, getGeminiApiKey, getGeminiModel, setGeminiApiKey, setGeminiModel } from '../lib/llm'
 import { downloadFullBackup, importFullBackup } from '../lib/backup'
 import { Download, Upload, ExternalLink, Check } from 'lucide-react'
 
@@ -11,12 +11,14 @@ export default function Settings() {
   const { dark, toggle } = useDarkMode()
   const { language, setLanguage } = useLanguage()
   const [apiKey, setApiKeyState] = useState(getGeminiApiKey())
+  const [model, setModelState] = useState(getGeminiModel())
   const [saved, setSaved] = useState(false)
   const fileInputRef = useRef<HTMLInputElement>(null)
   const [importMsg, setImportMsg] = useState('')
 
   const handleSaveKey = () => {
     setGeminiApiKey(apiKey.trim())
+    setGeminiModel(model)
     setSaved(true)
     setTimeout(() => setSaved(false), 2000)
   }
@@ -78,6 +80,21 @@ export default function Settings() {
           className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm"
         />
         <p className="text-xs text-slate-400">{t('settings.keyStoredLocally')}</p>
+
+        <label className="block pt-1 text-xs font-medium text-slate-600 dark:text-slate-300">{t('settings.model')}</label>
+        <select
+          value={model}
+          onChange={(e) => setModelState(e.target.value)}
+          className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm"
+        >
+          {GEMINI_MODELS.map((m) => (
+            <option key={m.id} value={m.id}>
+              {m.label}
+            </option>
+          ))}
+        </select>
+        <p className="text-xs text-slate-400">{t('settings.modelHint')}</p>
+
         <div className="flex items-center gap-3">
           <button onClick={handleSaveKey} className="rounded-lg bg-teal-600 px-4 py-2 text-sm font-medium text-white hover:bg-teal-700">
             {saved ? <span className="flex items-center gap-1"><Check size={14} /> {t('settings.saved')}</span> : 'Save'}

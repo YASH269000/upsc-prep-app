@@ -155,6 +155,8 @@ export const hi = {
       noNotes: 'अभी तक कोई नोट्स नहीं। अपना पहला नोट बनाएं!',
     },
     settings: {
+      model: 'मॉडल',
+      modelHint: 'यदि कोटा त्रुटि आए, तो Flash-Lite मॉडल चुनें — उनकी निःशुल्क दैनिक सीमा सबसे अधिक है।',
       title: 'सेटिंग्स',
       language: 'भाषा', darkMode: 'डार्क मोड',
       aiProvider: 'एआई प्रदाता (API कुंजी)',
