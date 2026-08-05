@@ -41,7 +41,7 @@ export const hi = {
       allTypes: 'सभी प्रकार',
       allSubjects: 'सभी विषय',
       allPapers: 'सभी प्रश्नपत्र',
-      video: 'वीडियो', text: 'पाठ', audio: 'ऑडियो', officialGovt: 'आधिकारिक सरकारी', currentAffairs: 'समसामयिकी',
+      video: 'वीडियो', text: 'पाठ', audio: 'ऑडियो', officialGovt: 'आधिकारिक सरकारी', currentAffairs: 'समसामयिकी', test: 'अभ्यास/परीक्षा', tool: 'उपकरण',
       visitLink: 'देखें',
       noResults: 'आपके फ़िल्टर से कोई संसाधन मेल नहीं खाता।',
     },

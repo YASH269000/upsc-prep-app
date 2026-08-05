@@ -42,4 +42,16 @@ export async function ensureSeeded() {
 
     await db.settings.put({ key: SEED_FLAG_KEY, value: 'true' })
   })
+
+  // v2 migration: resource directory expansion (Aug 2026). Resources are
+  // seed-only data (users cannot add their own), so clearing and re-seeding
+  // is safe and brings existing installs up to date.
+  const v2 = await db.settings.get('seeded-v2-resources')
+  if (v2?.value !== 'true') {
+    await db.transaction('rw', db.resources, db.settings, async () => {
+      await db.resources.clear()
+      await db.resources.bulkAdd(RESOURCES_SEED)
+      await db.settings.put({ key: 'seeded-v2-resources', value: 'true' })
+    })
+  }
 }
