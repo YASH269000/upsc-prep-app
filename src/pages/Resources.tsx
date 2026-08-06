@@ -12,6 +12,7 @@ const TYPE_LABELS: Record<string, string> = {
   'official-govt': 'resources.officialGovt',
   'current-affairs': 'resources.currentAffairs',
   test: 'resources.test',
+  youtube: 'resources.youtube',
   tool: 'resources.tool',
 }
 
@@ -22,6 +23,7 @@ const TYPE_COLORS: Record<string, string> = {
   'official-govt': 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300',
   'current-affairs': 'bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300',
   test: 'bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-300',
+  youtube: 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300',
   tool: 'bg-teal-100 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300',
 }
 

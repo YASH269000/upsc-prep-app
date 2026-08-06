@@ -18,7 +18,7 @@ export interface ResourceLink {
   title: string
   description: string
   url: string
-  type: 'video' | 'text' | 'audio' | 'official-govt' | 'current-affairs' | 'test' | 'tool'
+  type: 'video' | 'text' | 'audio' | 'official-govt' | 'current-affairs' | 'test' | 'tool' | 'youtube'
   subject: string // e.g. Polity, History, Geography, Economy, Environment, Science & Tech, CSAT, Ethics, Essay, Current Affairs
   paper: string // e.g. "Prelims GS I", "Mains GS II", "CSAT", "All Papers"
   language: 'English' | 'Hindi' | 'English/Hindi'

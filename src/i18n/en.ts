@@ -41,7 +41,7 @@ export const en = {
       allTypes: 'All types',
       allSubjects: 'All subjects',
       allPapers: 'All papers',
-      video: 'Video', text: 'Text', audio: 'Audio', officialGovt: 'Official Govt', currentAffairs: 'Current Affairs', test: 'Practice/Test', tool: 'Tool',
+      video: 'Video', text: 'Text', audio: 'Audio', officialGovt: 'Official Govt', currentAffairs: 'Current Affairs', test: 'Practice/Test', tool: 'Tool', youtube: 'YouTube Videos',
       visitLink: 'Visit',
       noResults: 'No resources match your filters.',
     },

@@ -1,6 +1,6 @@
 import { db } from './db'
 import { seedTopics } from '../data/syllabus'
-import { RESOURCES_SEED } from '../data/resources'
+import { RESOURCES_SEED, RESOURCES_VERSION } from '../data/resources'
 import { QUIZ_SEED } from '../data/quiz-index'
 import { FLASHCARDS_SEED } from '../data/flashcards'
 import { newCardFsrsFields } from '../lib/fsrs'
@@ -43,15 +43,16 @@ export async function ensureSeeded() {
     await db.settings.put({ key: SEED_FLAG_KEY, value: 'true' })
   })
 
-  // v2 migration: resource directory expansion (Aug 2026). Resources are
-  // seed-only data (users cannot add their own), so clearing and re-seeding
-  // is safe and brings existing installs up to date.
-  const v2 = await db.settings.get('seeded-v2-resources')
-  if (v2?.value !== 'true') {
+  // Versioned resource seeding: whenever RESOURCES_VERSION changes, replace the
+  // local copy of the directory. Resources are seed-only data (users cannot add
+  // their own), so clearing and re-seeding is always safe and keeps existing
+  // installs in sync with link fixes and new entries.
+  const stored = await db.settings.get('resources-version')
+  if (stored?.value !== String(RESOURCES_VERSION)) {
     await db.transaction('rw', db.resources, db.settings, async () => {
       await db.resources.clear()
       await db.resources.bulkAdd(RESOURCES_SEED)
-      await db.settings.put({ key: 'seeded-v2-resources', value: 'true' })
+      await db.settings.put({ key: 'resources-version', value: String(RESOURCES_VERSION) })
     })
   }
 }
