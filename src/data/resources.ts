@@ -9,21 +9,21 @@ export const RESOURCES_SEED: ResourceLink[] = [
   { title: 'UPSC Previous Year Papers', description: 'Official archive of Prelims & Mains question papers.', url: 'https://upsc.gov.in/examinations/previous-question-papers', type: 'official-govt', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
 
   // ---- NCERT / ePathshala / NIOS ----
-  { title: 'NCERT Textbooks (all classes)', description: 'Free official NCERT textbooks for Class 6-12, the base layer for UPSC GS prep.', url: 'https://ncert.nic.in', type: 'text', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
-  { title: 'ePathshala', description: 'NCERT digital platform with textbooks, audio, video and e-content.', url: 'https://epathshala.nic.in', type: 'text', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
-  { title: 'NIOS Study Material', description: 'NIOS Class 11-12 material, useful simplified alternative to NCERT for some subjects.', url: 'https://www.nios.ac.in', type: 'text', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
-  { title: 'NCERT Class 11 Indian Constitution at Work', description: 'Foundational polity textbook covering constitutional design and functioning.', url: 'https://ncert.nic.in', type: 'text', subject: 'Polity', paper: 'Prelims GS I', language: 'English/Hindi' },
-  { title: 'NCERT Class 9-10 Contemporary India (Geography)', description: 'Basics of Indian physical, economic and human geography.', url: 'https://ncert.nic.in', type: 'text', subject: 'Geography', paper: 'Prelims GS I', language: 'English/Hindi' },
-  { title: 'NCERT Class 11 Indian Economic Development', description: 'Foundational economy textbook: growth, planning, sectors, reforms.', url: 'https://ncert.nic.in', type: 'text', subject: 'Economy', paper: 'Prelims GS I', language: 'English/Hindi' },
-  { title: 'NCERT Class 11-12 Themes in Indian History', description: 'Ancient, medieval and modern Indian history themes.', url: 'https://ncert.nic.in', type: 'text', subject: 'History', paper: 'Prelims GS I', language: 'English/Hindi' },
-  { title: 'NCERT Class 11 Biology & Class 12 Chemistry (S&T base)', description: 'Base science concepts frequently tested in Prelims GS.', url: 'https://ncert.nic.in', type: 'text', subject: 'Science & Tech', paper: 'Prelims GS I', language: 'English/Hindi' },
+  { title: 'NCERT Textbooks (all classes)', description: 'Free official NCERT textbooks for Class 6-12, the base layer for UPSC GS prep.', url: 'https://ncert.nic.in/textbook.php', type: 'text', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
+  { title: 'ePathshala', description: 'NCERT digital platform with textbooks, audio, video and e-content.', url: 'https://epathshala.ncert.gov.in/', type: 'text', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
+  { title: 'NIOS Study Material', description: 'NIOS Class 11-12 material, useful simplified alternative to NCERT for some subjects.', url: 'https://www.nios.ac.in/online-course-material/sr-secondary-courses.aspx', type: 'text', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
+  { title: 'NCERT Class 11 Indian Constitution at Work', description: 'Foundational polity textbook covering constitutional design and functioning.', url: 'https://ncert.nic.in/textbook.php', type: 'text', subject: 'Polity', paper: 'Prelims GS I', language: 'English/Hindi' },
+  { title: 'NCERT Class 9-10 Contemporary India (Geography)', description: 'Basics of Indian physical, economic and human geography.', url: 'https://ncert.nic.in/textbook.php', type: 'text', subject: 'Geography', paper: 'Prelims GS I', language: 'English/Hindi' },
+  { title: 'NCERT Class 11 Indian Economic Development', description: 'Foundational economy textbook: growth, planning, sectors, reforms.', url: 'https://ncert.nic.in/textbook.php', type: 'text', subject: 'Economy', paper: 'Prelims GS I', language: 'English/Hindi' },
+  { title: 'NCERT Class 11-12 Themes in Indian History', description: 'Ancient, medieval and modern Indian history themes.', url: 'https://ncert.nic.in/textbook.php', type: 'text', subject: 'History', paper: 'Prelims GS I', language: 'English/Hindi' },
+  { title: 'NCERT Class 11 Biology & Class 12 Chemistry (S&T base)', description: 'Base science concepts frequently tested in Prelims GS.', url: 'https://ncert.nic.in/textbook.php', type: 'text', subject: 'Science & Tech', paper: 'Prelims GS I', language: 'English/Hindi' },
 
   // ---- PIB ----
-  { title: 'Press Information Bureau (PIB)', description: 'Official government press releases — the single best current affairs source.', url: 'https://pib.gov.in', type: 'current-affairs', subject: 'Current Affairs', paper: 'All Papers', language: 'English/Hindi' },
+  { title: 'Press Information Bureau (PIB)', description: 'Official government press releases — the single best current affairs source.', url: 'https://www.pib.gov.in/AllReleasem.aspx', type: 'current-affairs', subject: 'Current Affairs', paper: 'All Papers', language: 'English/Hindi' },
   { title: 'PIB Hindi', description: 'Hindi-language government press releases.', url: 'https://pib.gov.in/AllReleasem.aspx?MenuId=3&reg=3&lang=2', type: 'current-affairs', subject: 'Current Affairs', paper: 'All Papers', language: 'Hindi' },
 
   // ---- PRS Legislative Research ----
-  { title: 'PRS Legislative Research', description: 'Bill summaries, legislative analysis, budget analysis (CC BY 4.0 licensed).', url: 'https://prsindia.org', type: 'text', subject: 'Polity', paper: 'Mains GS II', language: 'English' },
+  { title: 'PRS Legislative Research', description: 'Bill summaries, legislative analysis, budget analysis (CC BY 4.0 licensed).', url: 'https://prsindia.org/billtrack', type: 'text', subject: 'Polity', paper: 'Mains GS II', language: 'English' },
   { title: 'PRS Budget Analysis', description: 'Ministry-wise analysis of the Union Budget.', url: 'https://prsindia.org/budgets', type: 'text', subject: 'Economy', paper: 'Mains GS III', language: 'English' },
   { title: 'PRS Bill Track', description: 'Track status and summaries of Bills introduced in Parliament.', url: 'https://prsindia.org/billtrack', type: 'text', subject: 'Polity', paper: 'Mains GS II', language: 'English' },
 
@@ -32,11 +32,11 @@ export const RESOURCES_SEED: ResourceLink[] = [
   { title: 'Economic Survey of India', description: 'Annual flagship document analyzing the state of the Indian economy.', url: 'https://www.indiabudget.gov.in/economicsurvey/', type: 'official-govt', subject: 'Economy', paper: 'Mains GS III', language: 'English/Hindi' },
 
   // ---- India Code ----
-  { title: 'India Code', description: 'Official repository of all Central and State Acts — for reading bare acts.', url: 'https://www.indiacode.nic.in', type: 'official-govt', subject: 'Polity', paper: 'Mains GS II', language: 'English' },
+  { title: 'India Code', description: 'Official repository of all Central and State Acts — for reading bare acts.', url: 'https://www.indiacode.nic.in/handle/123456789/1362/browse?type=actno', type: 'official-govt', subject: 'Polity', paper: 'Mains GS II', language: 'English' },
   { title: 'The Constitution of India (bare act)', description: 'Full official text of the Constitution.', url: 'https://www.indiacode.nic.in/handle/123456789/15240', type: 'official-govt', subject: 'Polity', paper: 'Prelims GS I', language: 'English/Hindi' },
 
   // ---- ARC Reports ----
-  { title: '2nd Administrative Reforms Commission Reports', description: 'ARC reports on governance reforms — vital for GS II & Ethics answers.', url: 'https://darpg.gov.in', type: 'official-govt', subject: 'Governance', paper: 'Mains GS II', language: 'English' },
+  { title: '2nd Administrative Reforms Commission Reports', description: 'ARC reports on governance reforms — vital for GS II & Ethics answers.', url: 'https://darpg.gov.in/en/arc-reports', type: 'official-govt', subject: 'Governance', paper: 'Mains GS II', language: 'English' },
 
   // ---- SWAYAM / NPTEL ----
   { title: 'SWAYAM', description: 'Free government MOOC platform with university-level courses across subjects.', url: 'https://swayam.gov.in', type: 'video', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
@@ -56,38 +56,38 @@ export const RESOURCES_SEED: ResourceLink[] = [
   { title: 'AIR NewsOnAir', description: 'All India Radio news bulletins and "Spotlight"/"Public Speak" discussions.', url: 'https://newsonair.gov.in', type: 'audio', subject: 'Current Affairs', paper: 'All Papers', language: 'English/Hindi' },
 
   // ---- Drishti IAS ----
-  { title: 'Drishti IAS (free resources)', description: 'Daily current affairs, mains answer writing practice, free articles.', url: 'https://www.drishtiias.com', type: 'text', subject: 'Current Affairs', paper: 'All Papers', language: 'English/Hindi' },
-  { title: 'Drishti IAS (YouTube)', description: 'Free daily video lectures on current affairs and GS topics — search "Drishti IAS".', url: 'https://www.youtube.com/results?search_query=Drishti+IAS', type: 'video', subject: 'Current Affairs', paper: 'All Papers', language: 'Hindi' },
+  { title: 'Drishti IAS (free resources)', description: 'Daily current affairs, mains answer writing practice, free articles.', url: 'https://www.drishtiias.com/free-downloads/daily-current-affairs', type: 'text', subject: 'Current Affairs', paper: 'All Papers', language: 'English/Hindi' },
+  { title: 'Drishti IAS (YouTube)', description: 'Free daily video lectures on current affairs and GS topics — search "Drishti IAS".', url: 'https://www.youtube.com/@DrishtiIASvideos', type: 'video', subject: 'Current Affairs', paper: 'All Papers', language: 'Hindi' },
 
   // ---- Vision IAS ----
-  { title: 'Vision IAS (free resources)', description: 'Free value-added material and monthly current affairs magazines.', url: 'https://www.visionias.in', type: 'text', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
-  { title: 'Vision IAS (YouTube)', description: 'Free lectures and analysis videos — search "Vision IAS".', url: 'https://www.youtube.com/results?search_query=Vision+IAS', type: 'video', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
+  { title: 'Vision IAS (free resources)', description: 'Free value-added material and monthly current affairs magazines.', url: 'https://www.visionias.in/resources/vam.php', type: 'text', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
+  { title: 'Vision IAS (YouTube)', description: 'Free lectures and analysis videos — search "Vision IAS".', url: 'https://www.youtube.com/@VisionIASdelhi', type: 'video', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
   { title: 'Vision IAS Open Test Series', description: 'Free open mock tests for Prelims.', url: 'https://visionias.in/opentest', type: 'text', subject: 'General', paper: 'Prelims GS I', language: 'English' },
 
   // ---- StudyIQ ----
-  { title: 'StudyIQ IAS (YouTube)', description: 'Free daily current affairs and GS foundation videos — search "StudyIQ IAS".', url: 'https://www.youtube.com/results?search_query=StudyIQ+IAS', type: 'video', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
+  { title: 'StudyIQ IAS (YouTube)', description: 'Free daily current affairs and GS foundation videos — search "StudyIQ IAS".', url: 'https://www.youtube.com/@StudyIQEducationLtd', type: 'video', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
 
   // ---- Mrunal ----
-  { title: 'Mrunal.org (Economy)', description: 'Deep-dive articles and lecture series on Indian Economy fundamentals.', url: 'https://mrunal.org', type: 'text', subject: 'Economy', paper: 'Mains GS III', language: 'English' },
+  { title: 'Mrunal.org (Economy)', description: 'Deep-dive articles and lecture series on Indian Economy fundamentals.', url: 'https://mrunal.org/economy', type: 'text', subject: 'Economy', paper: 'Mains GS III', language: 'English' },
 
   // ---- Sudarshan Gurjar ----
-  { title: 'Sudarshan Gurjar (Geography)', description: 'Free geography notes and lecture videos, popular for Prelims + Mains geography.', url: 'https://sudarshangurjar.com', type: 'text', subject: 'Geography', paper: 'Prelims GS I', language: 'English/Hindi' },
+  { title: 'Sudarshan Gurjar (Geography)', description: 'Free geography notes and lecture videos, popular for Prelims + Mains geography.', url: 'https://sudarshangurjar.com/geography-beginner/', type: 'text', subject: 'Geography', paper: 'Prelims GS I', language: 'English/Hindi' },
 
   // ---- PMF IAS ----
-  { title: 'PMF IAS', description: 'Concise notes on Geography, Environment and Science & Tech.', url: 'https://www.pmfias.com', type: 'text', subject: 'Environment', paper: 'Prelims GS I', language: 'English' },
-  { title: 'PMF IAS - Environment & Ecology', description: 'Detailed notes on ecology, biodiversity and climate change.', url: 'https://www.pmfias.com', type: 'text', subject: 'Environment', paper: 'Mains GS III', language: 'English' },
+  { title: 'PMF IAS', description: 'Concise notes on Geography, Environment and Science & Tech.', url: 'https://www.pmfias.com/environment/', type: 'text', subject: 'Environment', paper: 'Prelims GS I', language: 'English' },
+  { title: 'PMF IAS - Environment & Ecology', description: 'Detailed notes on ecology, biodiversity and climate change.', url: 'https://www.pmfias.com/category/general-studies-iii/general-studies-iii-current-affairs/gs3-environment/', type: 'text', subject: 'Environment', paper: 'Mains GS III', language: 'English' },
 
   // ---- InsightsonIndia ----
-  { title: 'InsightsonIndia Daily Current Affairs', description: 'Daily current affairs summary and daily answer writing initiative.', url: 'https://www.insightsonindia.com', type: 'current-affairs', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
+  { title: 'InsightsonIndia Daily Current Affairs', description: 'Daily current affairs summary and daily answer writing initiative.', url: 'https://www.insightsonindia.com/current-affairs-upsc/', type: 'current-affairs', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
 
   // ---- IASbaba ----
-  { title: 'IASbaba', description: 'Daily current affairs, prelims test series and mains answer writing.', url: 'https://www.iasbaba.com', type: 'current-affairs', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
+  { title: 'IASbaba', description: 'Daily current affairs, prelims test series and mains answer writing.', url: 'https://iasbaba.com/iasbabas-daily-current-affairs/', type: 'current-affairs', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
 
   // ---- Civilsdaily ----
-  { title: 'Civilsdaily', description: 'Daily news analysis and free mind maps for quick revision.', url: 'https://www.civilsdaily.com', type: 'current-affairs', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
+  { title: 'Civilsdaily', description: 'Daily news analysis and free mind maps for quick revision.', url: 'https://www.civilsdaily.com/news/', type: 'current-affairs', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
 
   // ---- ClearIAS ----
-  { title: 'ClearIAS', description: 'Free study material and structured guidance for beginners.', url: 'https://www.clearias.com', type: 'text', subject: 'General', paper: 'All Papers', language: 'English' },
+  { title: 'ClearIAS', description: 'Free study material and structured guidance for beginners.', url: 'https://www.clearias.com/free/', type: 'text', subject: 'General', paper: 'All Papers', language: 'English' },
 
   // ---- GKToday ----
   { title: 'GKToday', description: 'General knowledge and current affairs quizzes and articles.', url: 'https://www.gktoday.in', type: 'current-affairs', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
@@ -96,27 +96,27 @@ export const RESOURCES_SEED: ResourceLink[] = [
   { title: 'Arthapedia', description: 'Wiki-style explanations of economic terms and concepts used in Indian policy.', url: 'http://www.arthapedia.in', type: 'text', subject: 'Economy', paper: 'Mains GS III', language: 'English' },
 
   // ---- Additional subject-distributed entries to round out to 50+ ----
-  { title: 'NCERT Class 12 Political Science (Politics in India Since Independence)', description: 'Post-independence political developments, key for Mains GS I & II.', url: 'https://ncert.nic.in', type: 'text', subject: 'Polity', paper: 'Mains GS I', language: 'English/Hindi' },
-  { title: 'NCERT Class 12 Fundamentals of Human Geography', description: 'Human geography concepts: population, settlements, economic activities.', url: 'https://ncert.nic.in', type: 'text', subject: 'Geography', paper: 'Mains GS I', language: 'English/Hindi' },
-  { title: 'NIOS Sociology Study Material', description: 'Simplified sociology content, useful base before Optional-level depth.', url: 'https://www.nios.ac.in', type: 'text', subject: 'Sociology', paper: 'Optional', language: 'English/Hindi' },
-  { title: 'SWAYAM: Ethics and Values Course', description: 'Free MOOC covering ethics theory — supports GS IV preparation.', url: 'https://swayam.gov.in', type: 'video', subject: 'Ethics', paper: 'Mains GS IV', language: 'English' },
+  { title: 'NCERT Class 12 Political Science (Politics in India Since Independence)', description: 'Post-independence political developments, key for Mains GS I & II.', url: 'https://ncert.nic.in/textbook.php', type: 'text', subject: 'Polity', paper: 'Mains GS I', language: 'English/Hindi' },
+  { title: 'NCERT Class 12 Fundamentals of Human Geography', description: 'Human geography concepts: population, settlements, economic activities.', url: 'https://ncert.nic.in/textbook.php', type: 'text', subject: 'Geography', paper: 'Mains GS I', language: 'English/Hindi' },
+  { title: 'NIOS Sociology Study Material', description: 'Simplified sociology content, useful base before Optional-level depth.', url: 'https://www.nios.ac.in/online-course-material/sr-secondary-courses/sociology-(331).aspx', type: 'text', subject: 'Sociology', paper: 'Optional', language: 'English/Hindi' },
+  { title: 'SWAYAM: Ethics and Values Course', description: 'Free MOOC covering ethics theory — supports GS IV preparation.', url: 'https://onlinecourses.swayam2.ac.in/imb26_mg125/preview', type: 'video', subject: 'Ethics', paper: 'Mains GS IV', language: 'English' },
   { title: 'PIB Science & Technology Releases', description: 'Filter PIB releases for S&T ministry updates — ISRO, DRDO, biotech.', url: 'https://pib.gov.in', type: 'current-affairs', subject: 'Science & Tech', paper: 'Prelims GS I', language: 'English/Hindi' },
   { title: 'PIB Environment & Forests Releases', description: 'Filter PIB releases from Ministry of Environment, Forest and Climate Change.', url: 'https://pib.gov.in', type: 'current-affairs', subject: 'Environment', paper: 'Mains GS III', language: 'English/Hindi' },
-  { title: 'Drishti IAS Mains Answer Writing', description: 'Daily mains answer writing practice questions with model approach.', url: 'https://www.drishtiias.com', type: 'text', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
+  { title: 'Drishti IAS Mains Answer Writing', description: 'Daily mains answer writing practice questions with model approach.', url: 'https://www.drishtiias.com/mains-marathon-2025', type: 'text', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
   { title: 'PRS: How a Bill becomes an Act', description: 'Explainer on the legislative process in India.', url: 'https://prsindia.org', type: 'text', subject: 'Polity', paper: 'Mains GS II', language: 'English' },
-  { title: 'India Budget: Economic Survey Statistical Appendix', description: 'Data tables for economy-related Prelims facts.', url: 'https://www.indiabudget.gov.in', type: 'official-govt', subject: 'Economy', paper: 'Prelims GS I', language: 'English' },
-  { title: 'NPTEL: Indian Economy Course', description: 'University-level video course on Indian economic development.', url: 'https://nptel.ac.in', type: 'video', subject: 'Economy', paper: 'Optional', language: 'English' },
+  { title: 'India Budget: Economic Survey Statistical Appendix', description: 'Data tables for economy-related Prelims facts.', url: 'https://www.indiabudget.gov.in/economicsurvey/', type: 'official-govt', subject: 'Economy', paper: 'Prelims GS I', language: 'English' },
+  { title: 'NPTEL: Indian Economy Course', description: 'University-level video course on Indian economic development.', url: 'https://onlinecourses.nptel.ac.in/noc24_ec04/preview', type: 'video', subject: 'Economy', paper: 'Optional', language: 'English' },
   { title: 'Sansad TV: India\'s Constitution', description: 'Documentary-style series on the making of the Indian Constitution.', url: 'https://www.youtube.com/@sansadtv', type: 'video', subject: 'Polity', paper: 'Prelims GS I', language: 'English/Hindi' },
-  { title: 'AIR Spotlight Archive', description: 'Daily policy discussion programme covering diverse GS topics.', url: 'https://newsonair.gov.in', type: 'audio', subject: 'Current Affairs', paper: 'Mains GS II', language: 'English/Hindi' },
-  { title: 'GKToday Daily Quiz', description: 'Free daily current-affairs based MCQ quiz for Prelims practice.', url: 'https://www.gktoday.in', type: 'current-affairs', subject: 'CSAT', paper: 'CSAT', language: 'English' },
-  { title: 'ClearIAS Prelims Test Series (free)', description: 'Free basic mock test series for Prelims.', url: 'https://www.clearias.com', type: 'text', subject: 'General', paper: 'Prelims GS I', language: 'English' },
+  { title: 'AIR Spotlight Archive', description: 'Daily policy discussion programme covering diverse GS topics.', url: 'https://newsonair.gov.in/videos-category/spotlight/', type: 'audio', subject: 'Current Affairs', paper: 'Mains GS II', language: 'English/Hindi' },
+  { title: 'GKToday Daily Quiz', description: 'Free daily current-affairs based MCQ quiz for Prelims practice.', url: 'https://www.gktoday.in/gk-current-affairs-quiz-questions-answers/', type: 'current-affairs', subject: 'CSAT', paper: 'CSAT', language: 'English' },
+  { title: 'ClearIAS Prelims Test Series (free)', description: 'Free basic mock test series for Prelims.', url: 'https://www.clearias.com/upsc-prelims-free-online-mock-tests/', type: 'text', subject: 'General', paper: 'Prelims GS I', language: 'English' },
   { title: 'NDLI: History Collections', description: 'Curated historical texts and references available for free access.', url: 'https://ndl.gov.in', type: 'text', subject: 'History', paper: 'Mains GS I', language: 'English' },
-  { title: 'IGNOU eGyanKosh: Public Administration Notes', description: 'IGNOU MPA course material — useful for Public Administration optional.', url: 'https://egyankosh.ac.in', type: 'text', subject: 'Public Administration', paper: 'Optional', language: 'English/Hindi' },
-  { title: 'PMF IAS: Science & Technology Notes', description: 'Concise S&T notes covering biotech, space, defence tech.', url: 'https://www.pmfias.com', type: 'text', subject: 'Science & Tech', paper: 'Mains GS III', language: 'English' },
-  { title: 'Mrunal.org: Agriculture Economy', description: 'Detailed lecture series on agriculture-related economy topics.', url: 'https://mrunal.org', type: 'text', subject: 'Economy', paper: 'Mains GS III', language: 'English' },
-  { title: 'Sudarshan Gurjar: World Geography Videos', description: 'Free video series covering world physical geography.', url: 'https://sudarshangurjar.com', type: 'video', subject: 'Geography', paper: 'Prelims GS I', language: 'English/Hindi' },
-  { title: 'InsightsonIndia Mains Answer Writing Challenge', description: 'Daily mains-style questions for structured answer practice.', url: 'https://www.insightsonindia.com', type: 'text', subject: 'General', paper: 'All Papers', language: 'English' },
-  { title: 'IASbaba Prelims Test Series (free samples)', description: 'Sample free mock questions for Prelims practice.', url: 'https://www.iasbaba.com', type: 'text', subject: 'General', paper: 'Prelims GS I', language: 'English' },
+  { title: 'IGNOU eGyanKosh: Public Administration Notes', description: 'IGNOU MPA course material — useful for Public Administration optional.', url: 'https://egyankosh.ac.in/handle/123456789/3246', type: 'text', subject: 'Public Administration', paper: 'Optional', language: 'English/Hindi' },
+  { title: 'PMF IAS: Science & Technology Notes', description: 'Concise S&T notes covering biotech, space, defence tech.', url: 'https://www.pmfias.com/category/general-studies-iii/gs3-science-and-technology/', type: 'text', subject: 'Science & Tech', paper: 'Mains GS III', language: 'English' },
+  { title: 'Mrunal.org: Agriculture Economy', description: 'Detailed lecture series on agriculture-related economy topics.', url: 'https://mrunal.org/tag/agriculture', type: 'text', subject: 'Economy', paper: 'Mains GS III', language: 'English' },
+  { title: 'Sudarshan Gurjar: World Geography Videos', description: 'Free video series covering world physical geography.', url: 'https://www.youtube.com/@SudarshanGurjar', type: 'video', subject: 'Geography', paper: 'Prelims GS I', language: 'English/Hindi' },
+  { title: 'InsightsonIndia Mains Answer Writing Challenge', description: 'Daily mains-style questions for structured answer practice.', url: 'https://www.insightsonindia.com/upsc-mains-answer-writing-practice-secure-initiative/', type: 'text', subject: 'General', paper: 'All Papers', language: 'English' },
+  { title: 'IASbaba Prelims Test Series (free samples)', description: 'Sample free mock questions for Prelims practice.', url: 'https://iasbaba.com/iasbabas-all-india-prelims-test-series/', type: 'text', subject: 'General', paper: 'Prelims GS I', language: 'English' },
   { title: 'Civilsdaily Mindmaps', description: 'Visual mind maps for quick revision of GS topics.', url: 'https://www.civilsdaily.com', type: 'text', subject: 'General', paper: 'All Papers', language: 'English' },
 
   // ==================== EXPANSION PACK (researched Aug 2026) ====================
@@ -142,7 +142,7 @@ export const RESOURCES_SEED: ResourceLink[] = [
   { title: 'Indian Express – UPSC Key', description: 'Indian Express\'s dedicated daily UPSC current-affairs digest distilling top news stories relevant to Prelims and Mains. Note: Free tier limited: metered paywall may apply after several free articles/month.', url: 'https://indianexpress.com/about/upsc-key/', type: 'text', subject: 'Current Affairs', paper: 'All Papers', language: 'English' },
   { title: 'DD News (Prasar Bharati)', description: 'Official Doordarshan news channel information page with live TV access details; India\'s public-service news broadcaster. Note: Free official source.', url: 'https://prasarbharati.gov.in/dd-news/', type: 'video', subject: 'Current Affairs', paper: 'All Papers', language: 'English/Hindi' },
   { title: 'PIB Hindi (पत्र सूचना कार्यालय)', description: 'Official Hindi-language edition of the Press Information Bureau, mirroring all government press releases in Hindi. Note: Free official source.', url: 'https://www.pib.gov.in/indexd.aspx?reg=3&lang=2', type: 'official-govt', subject: 'Current Affairs', paper: 'All Papers', language: 'Hindi' },
-  { title: 'The Wire', description: 'Independent news and opinion site useful for a distinct ideological perspective on current affairs and governance issues. Note: Free; note it carries a left-of-centre editorial slant, read alongside other sources for balance.', url: 'https://thewire.in/', type: 'text', subject: 'Current Affairs', paper: 'Mains GS II', language: 'English' },
+  { title: 'The Wire', description: 'Independent news and opinion site useful for a distinct ideological perspective on current affairs and governance issues. Note: Free; note it carries a left-of-centre editorial slant, read alongside other sources for balance.', url: 'https://thewire.in/category/politics/all', type: 'text', subject: 'Current Affairs', paper: 'Mains GS II', language: 'English' },
 
   // ---- Economy ----
   { title: 'Yojana Magazine Archive (Publications Division)', description: 'Official government archive of Yojana monthly magazine, available in both Hindi and English editions. Note: Free official archive; older issues only, current issue may require subscription.', url: 'https://www.publicationsdivision.nic.in/journals/index.php?route=page/ajkalarchives&cid=2&lang=English', type: 'text', subject: 'Economy', paper: 'Mains GS II', language: 'English/Hindi' },
@@ -161,7 +161,7 @@ export const RESOURCES_SEED: ResourceLink[] = [
   { title: 'NIDM e-Learning Portal', description: 'NIDM\'s Moodle-based e-learning platform with free courses on disaster management topics. Note: Free; registration required for course access.', url: 'https://elearning.nidm.gov.in/local/home/index.php', type: 'video', subject: 'Environment', paper: 'Mains GS III', language: 'English' },
   { title: 'Zoological Survey of India – Publications', description: 'ZSI\'s official free publications on India\'s faunal diversity, useful for GS-III environment/biodiversity topics. Note: Free official source.', url: 'https://zsi.gov.in/publications/en', type: 'text', subject: 'Environment', paper: 'Mains GS III', language: 'English' },
   { title: 'Botanical Survey of India – e-Publications', description: 'BSI\'s official free e-publications on India\'s floral diversity, useful for GS-III environment/biodiversity topics. Note: Free official source.', url: 'https://bsi.gov.in/page/en/e-publications', type: 'text', subject: 'Environment', paper: 'Mains GS III', language: 'English' },
-  { title: 'Down To Earth', description: 'Leading environment/science journalism magazine covering climate, biodiversity, pollution and sustainable-development topics relevant to GS-III. Note: Free to read; voluntary support/subscription model, not a hard paywall.', url: 'https://www.downtoearth.org.in/', type: 'text', subject: 'Environment', paper: 'Mains GS III', language: 'English/Hindi' },
+  { title: 'Down To Earth', description: 'Leading environment/science journalism magazine covering climate, biodiversity, pollution and sustainable-development topics relevant to GS-III. Note: Free to read; voluntary support/subscription model, not a hard paywall.', url: 'https://www.downtoearth.org.in/topic/enviornment', type: 'text', subject: 'Environment', paper: 'Mains GS III', language: 'English/Hindi' },
 
   // ---- Essay ----
   { title: 'Anudeep Durishetty – Essay Writing Strategy', description: 'AIR-1 (CSE 2017) topper Anudeep Durishetty\'s own detailed article on his UPSC essay-writing strategy, self-published on his personal blog. Note: Free.', url: 'https://anudeepdurishetty.in/writing-a-good-essay-in-upsc-mains-explained/', type: 'text', subject: 'Essay', paper: 'Essay', language: 'English' },
@@ -185,7 +185,7 @@ export const RESOURCES_SEED: ResourceLink[] = [
   { title: 'ForumIAS – Free UPSC Preparation Blog', description: 'ForumIAS\'s free blog with current affairs, answer-writing initiatives, strategy articles and free resource compilations. Note: Free content; paid courses also promoted.', url: 'https://forumias.com/blog/', type: 'text', subject: 'General', paper: 'All Papers', language: 'English' },
   { title: 'Anudeep Durishetty – Blog (full archive)', description: 'AIR-1 topper\'s full self-published blog archive covering GS strategy, anthropology optional, interview prep and reading habits. Note: Free.', url: 'https://anudeepdurishetty.in/blog/', type: 'text', subject: 'General', paper: 'All Papers', language: 'English' },
   { title: 'NCERT Exemplar Problems (official)', description: 'NCERT\'s official page for free Exemplar Problem PDFs across subjects and classes, good for concept-testing beyond the plain textbook. Note: Free official source.', url: 'https://ncert.nic.in/exemplar-problems.php', type: 'text', subject: 'General', paper: 'Prelims GS I', language: 'English' },
-  { title: 'DIKSHA – National Digital Education Platform', description: 'Government of India\'s official e-learning platform (built with NCERT/CIET) offering free videos, textbooks and quizzes across subjects in multiple Indian languages. Note: Free official source.', url: 'https://diksha.gov.in/', type: 'video', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
+  { title: 'DIKSHA – National Digital Education Platform', description: 'Government of India\'s official e-learning platform (built with NCERT/CIET) offering free videos, textbooks and quizzes across subjects in multiple Indian languages. Note: Free official source.', url: 'https://diksha.gov.in/explore-course/', type: 'video', subject: 'General', paper: 'All Papers', language: 'English/Hindi' },
 
   // ---- Geography ----
   { title: 'MapsForUPSC – Important Maps for UPSC', description: 'Curated list of the most important India/world maps for UPSC prelims with links to practice each one. Note: Free.', url: 'https://mapsforupsc.com/important-maps-for-upsc-preparation/', type: 'text', subject: 'Geography', paper: 'Prelims GS I', language: 'English' },

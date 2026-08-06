@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import ReactMarkdown from 'react-markdown'
 import { db } from '../db/db'
 import Card from '../components/Card'
 import { callLLM, hasApiKey, isOnline, LLMError } from '../lib/llm'
@@ -24,6 +25,16 @@ type VoiceState = 'idle' | 'listening' | 'thinking' | 'speaking'
 const RATE_KEY = 'voice-rate'
 const VOICE_KEY = 'voice-uri'
 const AUTOSPEAK_KEY = 'voice-autospeak'
+
+
+/** LLM replies come back as markdown; render them instead of showing raw ** and ##. */
+function Markdown({ text }: { text: string }) {
+  return (
+    <div className="prose prose-sm dark:prose-invert max-w-none prose-headings:mt-3 prose-headings:mb-1 prose-p:my-1.5 prose-ul:my-1.5 prose-li:my-0.5 prose-hr:my-3">
+      <ReactMarkdown>{text}</ReactMarkdown>
+    </div>
+  )
+}
 
 export default function AITutor() {
   const { t, i18n } = useTranslation()
@@ -393,7 +404,7 @@ export default function AITutor() {
               {lastAssistant && (
                 <div className="rounded-lg bg-slate-50 dark:bg-slate-800 p-3">
                   <p className="mb-1 text-xs font-medium text-slate-400">{t('aiTutor.voiceLastAnswer')}</p>
-                  <p className="whitespace-pre-wrap text-sm text-slate-700 dark:text-slate-200">{lastAssistant.content}</p>
+                  <div className="text-sm text-slate-700 dark:text-slate-200"><Markdown text={lastAssistant.content} /></div>
                   <button
                     onClick={() => replay(lastAssistant.content)}
                     className="mt-2 inline-flex items-center gap-1 text-xs text-teal-600 hover:underline"
@@ -434,13 +445,13 @@ export default function AITutor() {
                 {(messages ?? []).map((m) => (
                   <div key={m.id} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                     <div
-                      className={`max-w-[85%] rounded-xl px-3 py-2 text-sm whitespace-pre-wrap ${
+                      className={`max-w-[85%] rounded-xl px-3 py-2 text-sm ${
                         m.role === 'user'
-                          ? 'bg-teal-600 text-white'
+                          ? 'whitespace-pre-wrap bg-teal-600 text-white'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100'
                       }`}
                     >
-                      {m.content}
+                      {m.role === 'assistant' ? <Markdown text={m.content} /> : m.content}
                       {m.role === 'assistant' && canSpeak && (
                         <button
                           onClick={() => replay(m.content)}
@@ -549,8 +560,8 @@ export default function AITutor() {
               </button>
               {quizResult && (
                 <div className="space-y-2">
-                  <div className="whitespace-pre-wrap rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-sm text-slate-700 dark:text-slate-200">
-                    {quizResult}
+                  <div className="rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-sm text-slate-700 dark:text-slate-200">
+                    <Markdown text={quizResult} />
                   </div>
                   {canSpeak && (
                     <button onClick={() => replay(quizResult)} className="inline-flex items-center gap-1 text-xs text-teal-600 hover:underline">
@@ -581,8 +592,8 @@ export default function AITutor() {
               </button>
               {evalResult && (
                 <div className="space-y-2">
-                  <div className="whitespace-pre-wrap rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-sm text-slate-700 dark:text-slate-200">
-                    {evalResult}
+                  <div className="rounded-lg bg-slate-50 dark:bg-slate-800 p-3 text-sm text-slate-700 dark:text-slate-200">
+                    <Markdown text={evalResult} />
                   </div>
                   {canSpeak && (
                     <button onClick={() => replay(evalResult)} className="inline-flex items-center gap-1 text-xs text-teal-600 hover:underline">
